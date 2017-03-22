@@ -32,7 +32,7 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
   - It will take sometime to download and install cuda.  Cuda is about 1.4Gb, so be patient.
   - *Just before the instalation process starts, you need to type in your superuser password.*
   - To install cuda, you need to follow the screen guides and basically type in as below:
-    -   accept   >   ```Enter```   >   y   >   y   >   y   ...            *[not exactly sure, but select "yes" for all questions]*
+    -   accept > y > y > y > y > ```Enter``` > y > y > ```Enter``` > "Instalation starts"
 
 ### 9. Type ```sudo make cudaecho``` soon after you install cuda.
 
