@@ -1,10 +1,10 @@
 ## DL-Environment-Autosetup
-This repository includes this readme and Makefile.  The Makefile allows you to easily setup a deep learning platform using keras, tensorflow and theano.  The testing OS is Ubuntu 14.04.5 LST 64bit, and hardware environmnets are X79 Extream 9 with Core i7, 32Gb memory and GTX Titan Black.  All processes can be done just to follow Makefile codes as below.
+This repository includes this readme and a Makefile.  The Makefile allows you to easily setup a deep learning platform using keras, tensorflow and theano.  The testing OS is Ubuntu 14.04.5 LST 64bit, and hardware environmnets are X79 Extream 9 with Core i7, 32Gb memory and GTX Titan Black.  All processes can be done just to follow Makefile codes as below.
 
 
-### 1. Make a directory to keep Makefile and download the Makefile in this repository.  Let's assume that we keep it in "DL_folder" under your user accuount folder.
+### 1. Make a directory to keep the Makefile and download the Makefile from this repository.  Let's assume that we keep it in "DL_folder" under your user accuount folder.
 
-  - This Makefile code uses a relative path.  So, YOU MAST KEEP THE MAKEFILE IN A FOLDER UNDER YOUR USER ACCOUNT. 
+  - This Makefile uses a relative path.  So, YOU MAST KEEP THE MAKEFILE IN A FOLDER JUST UNDER YOUR USER ACCOUNT. 
 
 ### 2. Open terminal and move to "DL_folder". (E.g. ```cd ./DL_folder```)
 
@@ -20,7 +20,7 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 
   - This will force you to reboot as CUI mode to install a nvidia original display driver.
   
-### 6. Now you're in CUI mode, right?  Try to login your account.
+### 6. Now you're in CUI, right?  Try to login your account.
 
   - Only text massage will appear on the screen.
 
@@ -35,7 +35,7 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 
   - This is to configure a path for cuda. 
   
-### 9. Type ```sudo make textoff``` to return GUI mode.
+### 9. Type ```sudo make textoff``` to return GUI.
 
   - Now the computer starts rebooting.
   
@@ -54,7 +54,6 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 ### 13. Type ```make pip``` in terminal.
 
   - Now you install all required packages for deep learning.
-
 
 ### 14. Type ```make git``` in terminal.
 
