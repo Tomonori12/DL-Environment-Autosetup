@@ -1,4 +1,4 @@
-#Time-stamp: <2017-03-14 15:25:53 hoshi>
+#Time-stamp: <2017-March-23>
 
 OUTDIR_KERAS = ../keras
 #INSDIR_KERAS = ./keras
