@@ -8,11 +8,11 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 
 ### 2. Get "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)" and put it in the "DL_foloder"
 
-### 3. Open terminal and move to "DL_folder". E.g. ```cd ./DL_folder```
+### 3. Open terminal and move to "DL_folder". (E.g. ```cd ./DL_folder```)
 
 ### 4. Type ```sudo make basic``` in terminal.
 
-  - This will get g++ and git libraries.  If you have already those ones, instalations will be skipped.
+  - This will get g++ and git libraries installed on your machine.  If you already have those ones, instalations will be skipped.
 
 ### 5. Type ```sudo make blacklist``` in termianl.
 
@@ -50,7 +50,7 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 
 ### 13. Type ```make anainstall``` in terminal
 
-  - This step is to download and install Anaconda.  Anaconda is 0.5Mb.
+  - This step is to download and install Anaconda.  Anaconda is ~500Mb.
   - To install anaconda, you need to follow guides.
   - If you don't mind, better select ```yes``` to set a path to Anaconda's python.
 
@@ -61,7 +61,8 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 
 ### 15. Type ```make git``` in terminal.
 
-  - Now you can test your platform. E.g. ```python ../keras/example/mnist_cnn.py```
+  - Now you can test your platform. (E.g. ```python ../keras/example/mnist_cnn.py```)
 
-
+<div style="text-align: right;">
 This document and links in the document are confirmed on 22nd March 2017.
+</div>
