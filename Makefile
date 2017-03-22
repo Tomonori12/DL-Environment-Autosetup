@@ -47,11 +47,6 @@ cudaecho:
 	echo ""                                                                    >> ../.bashrc
 	echo "export PATH=/usr/local/cuda-8.0/bin:$PATH"                           >> ../.bashrc
 	echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH"   >> ../.bashrc
-	sudo echo ""                                                                    >> ~/.bashrc
-	sudo echo ""                                                                    >> ~/.bashrc
-	sudo echo ""                                                                    >> ~/.bashrc
-	sudo echo "export PATH=/usr/local/cuda-8.0/bin:$PATH"                           >> ~/.bashrc
-	sudo echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH"   >> ~/.bashrc
 
 
 cudnn:
