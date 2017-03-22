@@ -42,14 +42,20 @@ cudainstall:
 	sudo sh cuda_8.0.61_375.26_linux.run
 
 cudaecho:
-	echo ""                                                                    >> .bashrc
-	echo ""                                                                    >> .bashrc
-	echo ""                                                                    >> .bashrc
-	echo "export PATH=/usr/local/cuda-8.0/bin:$PATH"                           >> .bashrc
-	echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH"   >> .bashrc
+	echo ""                                                                    >> ../.bashrc
+	echo ""                                                                    >> ../.bashrc
+	echo ""                                                                    >> ../.bashrc
+	echo "export PATH=/usr/local/cuda-8.0/bin:$PATH"                           >> ../.bashrc
+	echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH"   >> ../.bashrc
+	sudo echo ""                                                                    >> ~/.bashrc
+	sudo echo ""                                                                    >> ~/.bashrc
+	sudo echo ""                                                                    >> ~/.bashrc
+	sudo echo "export PATH=/usr/local/cuda-8.0/bin:$PATH"                           >> ~/.bashrc
+	sudo echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH"   >> ~/.bashrc
+
 
 cudnn:
-	dpkg -i libcudnn5_5.1.10-1+cuda8.0_amd64.deb
+	sudo dpkg -i libcudnn5_5.1.10-1+cuda8.0_amd64.deb
 
 
 anainstall:
