@@ -1,6 +1,5 @@
 ## DL-Environment-Autosetup
-This repository includes this readme and a Makefile.  The Makefile allows you to easily setup a deep learning platform using keras, tensorflow and theano.  The testing OS is Ubuntu 14.04.5 LST 64bit, and hardware environmnets are X79 Extream 9 with Core i7, 32Gb memory and GTX Titan Black.  All processes can be done just to follow Makefile codes as below.
-
+This repository includes this readme and a Makefile.  The Makefile allows you to easily setup a deep learning platform using keras, tensorflow and theano.  The testing OS is Ubuntu 14.04.5 LST 64bit, and hardware environmnets are X79 Extream 9 with Core i7, 32Gb memory and GTX Titan Black.  All processes can be done just to follow as below.
 
 ### 1. Make a directory to keep the Makefile and download the Makefile from this repository.  Let's assume that we keep it in "DL_folder" under your user accuount folder.
 
