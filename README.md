@@ -63,6 +63,4 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 
   - Now you can test your platform. (E.g. ```python ../keras/example/mnist_cnn.py```)
 
-<div style="text-align: right;">
-This document and links in the document are confirmed on 22nd March 2017.
-</div>
+*This document and links in the document are confirmed on 22nd March 2017.*
