@@ -6,7 +6,7 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 
   - This Makefile code uses a relative path.  So, YOU MAST KEEP THE MAKEFILE IN A FOLDER UNDER YOUR USER ACCOUNT. 
 
-### 2. Get "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)" and put it in the "DL_foloder"
+### 2. Get "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)" and put it in the "DL_folder"
 
 ### 3. Open terminal and move to "DL_folder". (E.g. ```cd ./DL_folder```)
 
