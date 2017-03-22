@@ -38,7 +38,7 @@ textoff:
 
 
 cudainstall:
-	wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
+	wget -o cuda_8.0.61_375.26_linux.run https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
 	sudo sh cuda_8.0.61_375.26_linux.run
 
 cudaecho:
