@@ -1,5 +1,5 @@
 ## DL-Environment-Autosetup
-This repository includes this readme and Makefile.  The Makefile allows you to easily setup a deep learning platform using keras, tensorflow and theano.  The testing environmnet is X79 Extream 9 with Core i7, 32Gb memory and GTX Titan Black.  All processes can be done just to follow Makefile code as below, expect for cuDNN download.  You need to download cuDNN library manually.  Be sure to have cuDNN (cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)), and it requires a registration step before you download.  Visit -> https://developer.nvidia.com/cudnn
+This repository includes this readme and Makefile.  The Makefile allows you to easily setup a deep learning platform using keras, tensorflow and theano.  The testing OS is Ubuntu 14.04.5 LST 64bit, and hardware environmnets are X79 Extream 9 with Core i7, 32Gb memory and GTX Titan Black.  All processes can be done just to follow Makefile codes as below, expect for cuDNN download.  You need to download cuDNN library manually.  Be sure to have cuDNN (cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)), and it requires a registration step before you download.  Visit -> https://developer.nvidia.com/cudnn
 
 
 ### 1. Download and make a directory to keep Makefile.  Let's assume that we keep it in "DL_folder" under your user accuount folder.
@@ -12,11 +12,11 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 
 ### 4. Type ```sudo make basic``` in terminal.
 
-  - This will get g++ and git libraries.  If you have these, instalations will be skipped.
+  - This will get g++ and git libraries.  If you have already those ones, instalations will be skipped.
 
 ### 5. Type ```sudo make blacklist``` in termianl.
 
-  - This will stpo nouveau display driver, which is originally used in Ubuntu, but cannot run deep learning.
+  - This will stop nouveau display driver, which is an open source display driver, but not originally from nvidia.
   
 ### 6. Type ```make texton``` in terminal.
 
@@ -29,14 +29,14 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 
 ### 8. Move to "DL_folder" and type ```make cudainstall``` in CUI.
 
-  - It will sometime to download and install cuda.  Cuda is about 1.4Gb, so be patient.
+  - It will take sometime to download and install cuda.  Cuda is about 1.4Gb, so be patient.
   - *Just before the instalation process starts, you need to type in your superuser password.*
   - To install cuda, you need to follow the screen guides and basically type in as below:
     -   accept   >   ```Enter```   >   y   >   y   >   y   ...            *[not exactly sure, but select "yes" for all questions]*
 
 ### 9. Type ```make cudaecho``` soon after you install cuda.
 
-  - This is to configure the path for cuda.
+  - This is to configure a path for cuda.  [This step is under checking]
 
 ### 10. Type ```make textoff``` to return GUI mode.
 
@@ -64,3 +64,4 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
   - Now you can test your platform. E.g. ```python ../keras/example/mnist_cnn.py```
 
 
+This document and links in the document are confirmed on 22nd March 2017.
