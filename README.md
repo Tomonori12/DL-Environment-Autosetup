@@ -1,5 +1,5 @@
 ## DL-Environment-Autosetup
-This repository includes this readme and Makefile.  The Makefile allows you to easily setup a deep learning platform using keras, tensorflow and theano.  The testing OS is Ubuntu 14.04.5 LST 64bit, and hardware environmnets are X79 Extream 9 with Core i7, 32Gb memory and GTX Titan Black.  All processes can be done just to follow Makefile codes as below.~~, expect for cuDNN download.  You need to download cuDNN library manually.  Be sure to have cuDNN (cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)), and it requires a registration step before you download.  Visit -> https://developer.nvidia.com/cudnn~~
+This repository includes this readme and Makefile.  The Makefile allows you to easily setup a deep learning platform using keras, tensorflow and theano.  The testing OS is Ubuntu 14.04.5 LST 64bit, and hardware environmnets are X79 Extream 9 with Core i7, 32Gb memory and GTX Titan Black.  All processes can be done just to follow Makefile codes as below.
 
 
 ### 1. Make a directory to keep Makefile and download the Makefile in this repository.  Let's assume that we keep it in "DL_folder" under your user accuount folder.
@@ -36,8 +36,8 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 
 ### 9. Type ```sudo make cudaecho``` soon after you install cuda.
 
-  - This is to configure a path for cuda.  [This step is under checking]
-
+  - This is to configure a path for cuda. 
+  
 ### 10. Type ```sudo make textoff``` to return GUI mode.
 
   - Now the computer starts rebooting.
@@ -46,7 +46,7 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 
 ### 12. Type ```sudo make cudnn``` in terminal.
 
-  - This will install cuDNN library.  Again, make sure you have "cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)" in "DL_folder"
+  - This will install cuDNN library.
 
 ### 13. Type ```make anainstall``` in terminal
 
