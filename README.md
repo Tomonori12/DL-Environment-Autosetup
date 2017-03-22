@@ -18,7 +18,7 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
 
   - This will stop nouveau display driver, which is an open source display driver, but not originally from nvidia.
   
-### 6. Type ```make texton``` in terminal.
+### 6. Type ```sudo make texton``` in terminal.
 
   - This will force you to reboot as CUI mode to install a nvidia original display driver.
   
@@ -34,11 +34,11 @@ This repository includes this readme and Makefile.  The Makefile allows you to e
   - To install cuda, you need to follow the screen guides and basically type in as below:
     -   accept   >   ```Enter```   >   y   >   y   >   y   ...            *[not exactly sure, but select "yes" for all questions]*
 
-### 9. Type ```make cudaecho``` soon after you install cuda.
+### 9. Type ```sudo make cudaecho``` soon after you install cuda.
 
   - This is to configure a path for cuda.  [This step is under checking]
 
-### 10. Type ```make textoff``` to return GUI mode.
+### 10. Type ```sudo make textoff``` to return GUI mode.
 
   - Now the computer starts rebooting.
   
