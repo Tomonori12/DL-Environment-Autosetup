@@ -2,7 +2,7 @@
 This repository includes this readme and Makefile.  The Makefile allows you to easily setup a deep learning platform using keras, tensorflow and theano.  The testing OS is Ubuntu 14.04.5 LST 64bit, and hardware environmnets are X79 Extream 9 with Core i7, 32Gb memory and GTX Titan Black.  All processes can be done just to follow Makefile codes as below, expect for cuDNN download.  You need to download cuDNN library manually.  Be sure to have cuDNN (cuDNN v5.1 Runtime Library for Ubuntu 14.04 (Deb)), and it requires a registration step before you download.  Visit -> https://developer.nvidia.com/cudnn
 
 
-### 1. Download and make a directory to keep Makefile.  Let's assume that we keep it in "DL_folder" under your user accuount folder.
+### 1. Make a directory to keep Makefile and download the Makefile in this repository.  Let's assume that we keep it in "DL_folder" under your user accuount folder.
 
   - This Makefile code uses a relative path.  So, YOU MAST KEEP THE MAKEFILE IN A FOLDER UNDER YOUR USER ACCOUNT. 
 
