@@ -6,12 +6,9 @@ OUTDIR_KERAS = ../keras
 message:
 	echo "specify what you want to do"
 
-
-
 basic:
 	sudo apt-get install -y g++
 	sudo apt-get install -y git
-
 
 blacklist:
 	echo ""                           > test.txt
@@ -31,27 +28,24 @@ texton:
 	sudo update-grub
 	sudo reboot
 
-textoff:
-	sudo grep -l 'splash text' /etc/default/grub | xargs sed -i.bak -e 's/splash text/splash/g'
-	sudo update-grub
-	sudo reboot
-
-
 cudainstall:
 	wget -o cuda_8.0.61_375.26_linux.run https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
 	sudo sh cuda_8.0.61_375.26_linux.run
 
 cudaecho:
-	echo ""                                                                    >> ../.bashrc
-	echo ""                                                                    >> ../.bashrc
-	echo ""                                                                    >> ../.bashrc
-	echo "export PATH=/usr/local/cuda-8.0/bin:$PATH"                           >> ../.bashrc
-	echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH"   >> ../.bashrc
+	echo ""                                                                    >> ~/.bashrc
+	echo ""                                                                    >> ~/.bashrc
+	echo ""                                                                    >> ~/.bashrc
+	echo "export PATH=/usr/local/cuda-8.0/bin:$PATH"                           >> ~/.bashrc
+	echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH"   >> ~/.bashrc
 
+textoff:
+	sudo grep -l 'splash text' /etc/default/grub | xargs sed -i.bak -e 's/splash text/splash/g'
+	sudo update-grub
+	sudo reboot
 
 cudnn:
 	sudo dpkg -i libcudnn5_5.1.10-1+cuda8.0_amd64.deb
-
 
 anainstall:
 	wget https://repo.continuum.io/archive/Anaconda3-4.3.0-Linux-x86_64.sh
