@@ -24,7 +24,7 @@ blacklist:
 	sudo update-initramfs -u
 
 texton:
-	sudo grep -l 'splash' /etc/default/grub | xargs sed -i.bak -e 's/splash/splash text/g'
+	sudo grep -l 'splash' /etc/default/grub | sudo xargs sed -i.bak -e 's/splash/splash text/g'
 	sudo update-grub
 	sudo reboot
 
@@ -40,7 +40,7 @@ cudaecho:
 	echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH"   >> ~/.bashrc
 
 textoff:
-	sudo grep -l 'splash text' /etc/default/grub | xargs sed -i.bak -e 's/splash text/splash/g'
+	sudo grep -l 'splash text' /etc/default/grub | sudo xargs sed -i.bak -e 's/splash text/splash/g'
 	sudo update-grub
 	sudo reboot
 
