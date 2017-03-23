@@ -48,6 +48,7 @@ This repository includes this readme and a Makefile.  The Makefile allows you to
 
   - This step is to download and install Anaconda.  Anaconda is ~500Mb.
   - To install anaconda, you need to follow guides.
+    - ```Enter``` >  ```yes``` > ```Enter``` > ```yes```
   - If you don't mind, better select ```yes``` to set a path to Anaconda's python.
 
 ### 13. Type ```make pip``` in terminal.
