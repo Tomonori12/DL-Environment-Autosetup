@@ -34,10 +34,10 @@ cudainstall:
 	sudo sh cuda_8.0.61_375.26_linux.run
 
 cudaecho:
-	echo ""                                                                    >> ~/.bashrc
-	echo ""                                                                    >> ~/.bashrc
-	echo ""                                                                    >> ~/.bashrc
-	echo "export PATH=/usr/local/cuda-8.0/bin:\$$PATH"                           >> ~/.bashrc
+	echo ""                                                                     >> ~/.bashrc
+	echo ""                                                                     >> ~/.bashrc
+	echo "Added by Tomonori12 DL-Environment-Autosetup"                         >> ~/.bashrc
+	echo "export PATH=/usr/local/cuda-8.0/bin:\$$PATH"                          >> ~/.bashrc
 	echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$$LD_LIBRARY_PATH"   >> ~/.bashrc
 
 textoff:
