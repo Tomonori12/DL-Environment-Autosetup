@@ -31,7 +31,9 @@ texton:
 
 cudainstall:
 	wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
-	#cuda for other versions  http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/
+	# wget http://developer.download.nvidia.com/compute/cuda/7_0/Prod/local_installers/cuda_7.0.28_linux.run
+	# wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run
+	# cuda for other versions  http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/
 	sudo sh cuda_8.0.61_375.26_linux-run
 
 cudaecho:
