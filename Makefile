@@ -40,12 +40,23 @@ cuda7.5:
 	sudo sh cuda_7.5.18_linux.run
 
 
-cudaecho:
+cuda8echo:
 	echo ""                                                                     >> ~/.bashrc
 	echo ""                                                                     >> ~/.bashrc
 	echo "#Added by Tomonori12 DL-Environment-Autosetup"                         >> ~/.bashrc
 	echo "export PATH=/usr/local/cuda-8.0/bin:\$$PATH"                          >> ~/.bashrc
 	echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$$LD_LIBRARY_PATH"   >> ~/.bashrc
+
+
+
+cuda7.5echo:
+	echo ""                                                                     >> ~/.bashrc
+	echo ""                                                                     >> ~/.bashrc
+	echo "#Added by Tomonori12 DL-Environment-Autosetup"                         >> ~/.bashrc
+	echo "export PATH=/usr/local/cuda-7.5/bin:\$$PATH"                          >> ~/.bashrc
+	echo "export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$$LD_LIBRARY_PATH"   >> ~/.bashrc
+
+
 
 textoff:
 	sudo grep -l 'splash text' /etc/default/grub | sudo xargs sed -i.bak -e 's/splash text/splash/g'
@@ -69,7 +80,6 @@ pip:
 	pip install keras
 	pip install tensorflow
 	pip install tensorflow-gpu
-	pip install theano
 
 git:
 	git clone https://github.com/fchollet/keras $(OUTDIR_KERAS)
