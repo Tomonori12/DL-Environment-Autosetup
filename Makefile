@@ -40,11 +40,6 @@ cuda7.5:
 	sudo sh cuda_7.5.18_linux.run
 
 
-cuda7.0:
-	wget http://developer.download.nvidia.com/compute/cuda/7_0/Prod/local_installers/cuda_7.0.28_linux.run
-	sudo sh cuda_7.0.28_linux.run
-
-
 cudaecho:
 	echo ""                                                                     >> ~/.bashrc
 	echo ""                                                                     >> ~/.bashrc
