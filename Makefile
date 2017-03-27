@@ -29,12 +29,21 @@ texton:
 	sudo update-grub
 	sudo reboot
 
-cudainstall:
+
+cuda8.0:
 	wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
-	# wget http://developer.download.nvidia.com/compute/cuda/7_0/Prod/local_installers/cuda_7.0.28_linux.run
-	# wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run
-	# cuda for other versions  http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/
-	# sudo sh cuda_8.0.61_375.26_linux-run
+	sudo sh cuda_8.0.61_375.26_linux-run
+
+
+cuda7.5:
+	wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run
+	sudo sh cuda_7.5.18_linux.run
+
+
+cuda7.0:
+	wget http://developer.download.nvidia.com/compute/cuda/7_0/Prod/local_installers/cuda_7.0.28_linux.run
+	sudo sh cuda_7.0.28_linux.run
+
 
 cudaecho:
 	echo ""                                                                     >> ~/.bashrc
@@ -48,14 +57,17 @@ textoff:
 	sudo update-grub
 	sudo reboot
 
-cudnn:
+cudnn5.1cuda8.0:
 	wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1404/x86_64/libcudnn5_5.1.10-1+cuda8.0_amd64.deb
 	sudo dpkg -i libcudnn5_5.1.10-1+cuda8.0_amd64.deb
+
+cuda5.1cuda7.5:
+	wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1404/x86_64/libcudnn5_5.1.10-1+cuda7.5_amd64.deb
+	sudo dpkg -i libcudnn5_5.1.10-1+cuda7.5_amd64.deb
 
 anainstall:
 	wget https://repo.continuum.io/archive/Anaconda3-4.3.0-Linux-x86_64.sh
 	bash ./Anaconda3-4.3.0-Linux-x86_64.sh
-	# source ~/.bashrc
 	sudo reboot
 
 pip:
