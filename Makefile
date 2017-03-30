@@ -40,7 +40,7 @@ cuda8.0:
 	echo "# Added by Tomonori12 DL-Environment-Autosetup"                       >> ~/.bashrc
 	echo "#----------------------------------------------------------"          >> ~/.bashrc
 	echo "export PATH=/usr/local/cuda-8.0/bin:\$$PATH"                          >> ~/.bashrc
-	echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$$LD_LIBRARY_PATH"   >> ~/.bashrc
+	echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:\$$LD_LIBRARY_PATH"   >> ~/.bashrc
 
 
 cuda7.5:
@@ -53,7 +53,7 @@ cuda7.5:
 	echo "# Added by Tomonori12 DL-Environment-Autosetup"                       >> ~/.bashrc
 	echo "#----------------------------------------------------------"          >> ~/.bashrc
 	echo "export PATH=/usr/local/cuda-7.5/bin:\$$PATH"                          >> ~/.bashrc
-	echo "export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$$LD_LIBRARY_PATH"   >> ~/.bashrc
+	echo "export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:\$$LD_LIBRARY_PATH"   >> ~/.bashrc
 
 
 textoff:
