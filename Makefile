@@ -30,9 +30,11 @@ texton:
 	sudo reboot
 
 
-cuda8.0:
+cuda8.0: cuda8.0echo
 	wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
 	sudo sh cuda_8.0.61_375.26_linux-run
+
+cuda8.0echo:
 	echo ""                                                                     >> ~/.bashrc
 	echo ""                                                                     >> ~/.bashrc
 	echo ""                                                                     >> ~/.bashrc
@@ -43,9 +45,11 @@ cuda8.0:
 	echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:\$$LD_LIBRARY_PATH"   >> ~/.bashrc
 
 
-cuda7.5:
+cuda7.5: cuda7.5echo
 	wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run
 	sudo sh cuda_7.5.18_linux.run
+
+cuda7.5echo:
 	echo ""                                                                     >> ~/.bashrc
 	echo ""                                                                     >> ~/.bashrc
 	echo ""                                                                     >> ~/.bashrc
